@@ -4,108 +4,160 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edward John D. Paulo | IT Specialist Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* ===== GLOBAL ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top left, #0f172a, #000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 { text-transform: uppercase; letter-spacing: 1px; }
+    a { color: cyan; text-decoration: none; }
+    .highlight { color: cyan; }
+    .container { width: 90%; max-width: 1000px; margin: 0 auto; text-align: center; }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative; height: 90vh; display: flex;
+      justify-content: center; align-items: center; flex-direction: column;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .hero h2 { font-size: 1.5rem; color: #00ffff; margin-bottom: 1.5rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      margin: 5px;
+      background: cyan;
+      color: #000;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn:hover { background: #00bcd4; box-shadow: 0 0 15px cyan; }
+
+    #bg-animation { position: absolute; top: 0; left: 0; z-index: -1; }
+
+    /* ===== FLOATING CONTACT BUTTON ===== */
+    .floating-contact {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: cyan;
+      color: black;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 0 15px cyan;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+    .floating-contact:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px cyan;
+    }
+
+    /* ===== FLOATING SOCIAL ICONS ===== */
+    .social-icons {
+      position: fixed;
+      bottom: 100px;
+      right: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 99;
+    }
+    .social-icons a {
+      background: rgba(0,255,255,0.15);
+      border: 1px solid cyan;
+      color: cyan;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+    }
+    .social-icons a:hover {
+      background: cyan;
+      color: #000;
+      transform: scale(1.15);
+      box-shadow: 0 0 20px cyan;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: #888;
+      background: #000;
+    }
+
+    .glow { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
+  </style>
 </head>
+
 <body>
-  <!-- Header -->
+  <!-- HERO -->
   <header class="hero">
     <div class="container">
-      <h1>Hi, I'm <span class="highlight">Edward John D. Paulo</span></h1>
-      <p>Information Technology Graduate | IT Support & QA Specialist | Logistics Expert</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+      <h1 class="glow">Hi, I'm <span class="highlight">Edward John D. Paulo</span></h1>
+      <h2><span id="typed-text"></span></h2>
+      <div>
+        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="Edward_John_Paulo_Resume.pdf" class="btn" download>📄 Download CV</a>
+      </div>
     </div>
+    <canvas id="bg-animation"></canvas>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am an <strong>Information Technology graduate</strong> with over seven years of experience in 
-        logistics operations, technical support, and quality assurance. I have a proven ability to analyze 
-        client needs, deliver technical solutions, and ensure system reliability. Skilled in troubleshooting, 
-        computer servicing, and network management, I enjoy applying technology to make operations faster 
-        and smarter.
-      </p>
-      <p>
-        I have hands-on experience in PC, laptop, and smartphone repair, as well as proficiency in 
-        <strong>C++, C#, HTML, CSS</strong>, and AI tools. I aim to use my expertise to contribute 
-        to innovative and technology-driven organizations.
-      </p>
-    </div>
-  </section>
+  <!-- Floating social icons -->
+  <div class="social-icons">
+    <a href="https://facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  </div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section light">
-    <div class="container">
-      <h2>Technical Skills</h2>
-      <ul class="skills-list">
-        <li>🧰 PC Assembly and Disassembly</li>
-        <li>🔧 Troubleshooting (Hardware & Software)</li>
-        <li>📶 Network Management & Maintenance</li>
-        <li>💻 Programming: C++, C#, HTML, CSS</li>
-        <li>🤖 Artificial Intelligence Tools & Automation</li>
-        <li>⚙️ Logistics Software & Technology</li>
-        <li>📊 Data Entry & System Documentation</li>
-        <li>🚚 Logistics & Supply Chain Management</li>
-      </ul>
-    </div>
-  </section>
+  <!-- Floating contact button -->
+  <div class="floating-contact" onclick="window.location.href='mailto:edwardjohnpaulo@gmail.com'">💬</div>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Work Experience</h2>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Edward John D. Paulo. All rights reserved.</p>
+  </footer>
 
-      <div class="experience-card">
-        <h3>PH Global Jet Express Inc. (J&T Express)</h3>
-        <h4>Quality Assurance Associate</h4>
-        <p><strong>June 10, 2020 – April 12, 2025</strong></p>
-        <ul>
-          <li>Monitored daily logistics activities, ensuring accuracy and consistency in shipping and delivery.</li>
-          <li>Performed regular quality checks and visual inspections on shipments.</li>
-          <li>Investigated operational incidents and implemented corrective actions.</li>
-          <li>Managed goods movement, tracked inventory, and ensured timely delivery.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <h3>AAI Logistics Cargo Express Inc. (Black Arrow Express)</h3>
-        <h4>Shipment Processor / Repacker</h4>
-        <p><strong>May 25, 2018 – January 31, 2020</strong></p>
-        <ul>
-          <li>Handled incoming and outgoing parcels by inspecting, documenting, and preparing packages for shipment.</li>
-          <li>Ensured shipment accuracy and maintained organized records for logistics operations.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section light">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="education-card">
-        <h3>Pangasinan State University – Urdaneta Campus</h3>
-        <p><strong>Bachelor of Science in Information Technology</strong></p>
-        <p>2013 – 2018</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Interested in working together or need IT assistance? Let’s connect!</p>
-      <ul class="contact-info">
-        <li>📧 <a href="mailto:edwardjohnpaulo@gmail.com">edwardjohnpaulo@gmail.com</a></li>
-        <li>📱 <a href="tel:+639664297330">+63 966 429 7330</a></li>
-        <li>📍 164 Station District, Rosales, Pangasinan</li>
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
-        <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a></li>
-      </ul>
-    </div>
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: [
+        "IT Specialist 💻",
+        "Network Technician 🌐",
+        "AI Enthusiast 🤖",
+        "Piso WiFi Vendo Builder 📡",
+        "Tech Support Expert 🔧"
+      ],
+      typeSpeed: 60, backSpeed: 30, backDelay: 1500, loop: true
+    });
+  </script>
+</body>
+</html>    </div>
   </section>
 
   <!-- Footer -->
