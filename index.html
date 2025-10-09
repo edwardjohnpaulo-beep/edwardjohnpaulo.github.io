@@ -3,38 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edward John D. Paulo | IT Specialist Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Edward John Paulo | IT Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- ===== Preloader ===== -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
 
-  <style>
-    /* ===== GLOBAL ===== */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: "Poppins", sans-serif;
-      background: radial-gradient(circle at top left, #0f172a, #000);
-      color: #fff;
-      overflow-x: hidden;
-    }
-    h1, h2, h3 { text-transform: uppercase; letter-spacing: 1px; }
-    a { color: cyan; text-decoration: none; }
-    .highlight { color: cyan; }
-    .container { width: 90%; max-width: 1000px; margin: 0 auto; text-align: center; }
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>Edward John Paulo</h1>
+    <p>IT Graduate • Troubleshooting Expert • Network Manager</p>
+    <button id="themeToggle">🌙</button>
+  </header>
 
-    /* ===== HERO ===== */
-    .hero {
-      position: relative; height: 90vh; display: flex;
-      justify-content: center; align-items: center; flex-direction: column;
-      text-align: center;
-    }
-    .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 0.5rem; }
-    .hero h2 { font-size: 1.5rem; color: #00ffff; margin-bottom: 1.5rem; }
+  <!-- ===== Hero Section ===== -->
+  <section id="hero">
+    <img src="profile.jpg" alt="Edward John Paulo" class="profile-img">
+    <h2>Hello, I'm Edward 👋</h2>
+    <p>
+      I’m an IT graduate with 7 years of experience in logistics and a passion
+      for technology, AI, and network management.
+    </p>
+    <a href="EdwardPaulo-Resume.pdf" class="btn" download>📄 Download Résumé</a>
+  </section>
 
-    .btn {
-      display: inline-block;
-      padding: 10px 25px;
-      margin: 5px;
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I specialize in troubleshooting PCs, laptops, and smartphones.
+      With strong skills in C++, C#, HTML, and CSS, I create efficient solutions.
+      I’m also a Piso WiFi vendo builder and manage small to mid-size networks.
+    </p>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>💻 PC / Laptop / Smartphone Troubleshooting</li>
+      <li>🌐 Network Setup & Management</li>
+      <li>⚙️ C++, C#, HTML, CSS</li>
+      <li>🤖 Artificial Intelligence & Automation</li>
+      <li>📦 Logistics Systems & IT Support</li>
+      <li>📶 Piso WiFi Vendo Development</li>
+      <li>🔍 Quality Assurance Associate</li>
+    </ul>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Piso WiFi System</h3>
+        <p>Custom-built vending WiFi network solution for public use.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Chat Assistant</h3>
+        <p>Developed an AI-powered assistant using Python and APIs.</p>
+      </div>
+      <div class="project-card">
+        <h3>Logistics Monitoring Tool</h3>
+        <p>Streamlined internal operations at a logistics company.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p class="contact-info">
+      📧 edwardjohnpaulo@gmail.com | 📱 +63 966 429 7330
+    </p>
+  </section>
+
+  <!-- ===== Floating Social Icons ===== -->
+  <div class="social-icons">
+    <a href="#" class="icon">💼</a>
+    <a href="#" class="icon">🐙</a>
+    <a href="#" class="icon">💬</a>
+  </div>
+
+  <!-- ===== Scroll to Top ===== -->
+  <button id="scrollTop">⬆</button>
+
+  <!-- ===== Scripts ===== -->
+  <script src="script.js"></script>
+</body>
+</html>      margin: 5px;
       background: cyan;
       color: #000;
       border-radius: 30px;
