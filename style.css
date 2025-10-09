@@ -1,4 +1,7 @@
-/* Global Styles */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,106 +9,192 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  color: #333;
-  background-color: #f8f8f8;
-  line-height: 1.6;
+  background-color: #0a0a0f;
+  color: #e0e0e0;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
-  color: white;
+  background: radial-gradient(circle at 30% 30%, #001f3f, #000);
+  color: #00ffff;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 255, 255, 0.08);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+  filter: blur(80px);
 }
 .hero h1 {
-  font-size: 2.5em;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffff;
 }
 .hero .highlight {
-  color: #ffe066;
+  color: #00ffff;
 }
 .hero p {
   font-size: 1.1em;
-  margin-top: 10px;
+  color: #b0b0b0;
 }
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background: white;
-  color: #3a1c71;
-  border-radius: 25px;
+  margin-top: 25px;
+  padding: 12px 35px;
+  background: #00ffff;
+  color: #000;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 .btn:hover {
-  background: #ffe066;
-  color: #000;
+  box-shadow: 0 0 15px #00ffff;
+  transform: scale(1.05);
 }
 
-/* Sections */
+/* Section Styles */
 .section {
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 .section.light {
-  background: #ffffff;
+  background: #10101a;
 }
 .section h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
   text-align: center;
-  color: #3a1c71;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #00ffff;
 }
 .section p, .section li {
-  max-width: 800px;
+  max-width: 900px;
   margin: 10px auto;
   text-align: center;
+  color: #cfcfcf;
 }
 
-/* Skills */
+/* Skills Section */
 .skills-list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  text-align: center;
-  margin-top: 20px;
+  gap: 15px;
+  margin-top: 25px;
+  padding: 0;
+}
+.skills-list li {
+  background: #121222;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #00ffff33;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.skills-list li:hover {
+  background: #00ffff11;
+  box-shadow: 0 0 15px #00ffff44;
+  transform: translateY(-4px);
 }
 
-/* Experience */
+/* Experience Section */
 .experience-card {
-  background: #fff;
+  background: #101020;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 20px auto;
-  text-align: left;
+  border-radius: 12px;
+  border: 1px solid #00ffff22;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+  max-width: 850px;
+  margin: 25px auto;
+  transition: all 0.3s ease;
+}
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ffff33;
 }
 .experience-card h3 {
-  color: #3a1c71;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
   margin-bottom: 5px;
 }
 .experience-card h4 {
-  font-weight: normal;
-  color: #555;
+  color: #b0b0b0;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .experience-card ul {
   list-style: disc;
-  margin-left: 20px;
+  margin-left: 25px;
+  color: #cfcfcf;
 }
 
-/* Education */
+/* Education Section */
 .education-card {
-  background: #fff;
+  background: #101020;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  border-radius: 12px;
+  border: 1px solid #00ffff33;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+  max-width: 750px;
   margin: auto;
   text-align: center;
 }
+.education-card h3 {
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 5px;
+}
+
+/* Contact Section */
+.contact-info {
+  list-style: none;
+  text-align: center;
+  margin-top: 25px;
+}
+.contact-info li {
+  margin: 10px 0;
+  color: #b0b0b0;
+}
+.contact-info a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.contact-info a:hover {
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* Footer */
+footer {
+  background: #050509;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #00ffff22;
+}
+footer p {
+  color: #aaa;
+}}
 
 /* Contact */
 .contact-info {
