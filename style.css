@@ -244,3 +244,6 @@ body.light {
     height: 140px;
   }
 }
+body.light header {
+  background: linear-gradient(90deg, #d6c4f2, #f9f9fb);
+}
