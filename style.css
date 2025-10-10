@@ -298,3 +298,7 @@ body.light input, body.light textarea { caret-color: #111; }
     margin-bottom: 30px;
   }
 }
+
+#hero p {
+  margin-bottom: 25px;
+    }
