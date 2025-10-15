@@ -1,111 +1,172 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary Meta -->
   <title>Edward John Paulo | IT Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Edward John Paulo — IT Graduate, Network Manager, and developer of Piso WiFi systems, AI assistants, and automation tools. Contact: edwardjohnpaulo@gmail.com" />
+  <meta name="author" content="Edward John Paulo" />
+  <meta name="keywords" content="Edward John Paulo, IT Portfolio, Piso WiFi, AI Chat Assistant, Network Manager, Troubleshooting" />
+  <link rel="canonical" href="https://edwardjohnpaulo-beep.github.io/edwardjohnpaulo.github.io/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Edward John Paulo | IT Portfolio" />
+  <meta property="og:description" content="IT Graduate • Network Manager • Developer of Piso WiFi systems and AI tools. Explore projects, skills, and contact information." />
+  <meta property="og:url" content="https://edwardjohnpaulo-beep.github.io/edwardjohnpaulo.github.io/" />
+  <meta property="og:image" content="https://edwardjohnpaulo-beep.github.io/edwardjohnpaulo.github.io/og-image.png" />
+  <meta property="og:site_name" content="Edward John Paulo" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Edward John Paulo | IT Portfolio" />
+  <meta name="twitter:description" content="IT Graduate • Network Manager • Developer of Piso WiFi systems and AI tools." />
+
+  <!-- Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Edward John Paulo",
+    "url": "https://edwardjohnpaulo-beep.github.io/edwardjohnpaulo.github.io/",
+    "sameAs": [
+      "https://www.facebook.com/edwardjohnpaulo",
+      "https://www.linkedin.com/in/edward-john-paulo-6ab22713b",
+      "https://github.com/edwardjohnpaulo-beep"
+    ],
+    "jobTitle": "IT Graduate • Network Manager",
+    "description": "Develops Piso WiFi systems, AI chat assistants, and logistics monitoring tools. Specializes in troubleshooting and network management."
+  }
+  </script>
+
+  <!-- Favicons (place your favicon files in the site root) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <!-- External libs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Robots: allow indexing -->
+  <meta name="robots" content="index, follow" />
 </head>
-
 <body>
-  <div id="preloader"><div class="loader"></div></div>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true"><div class="loader" role="progressbar" aria-label="Loading"></div></div>
 
-  <header>
-    <h1>Edward John Paulo</h1>
-    <p>IT Graduate • Troubleshooting Expert • Network Manager</p>
-    <button id="themeToggle" title="Toggle Light/Dark Mode">🌙</button>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <h1 class="site-title">Edward John Paulo</h1>
+        <p class="site-tagline">IT Graduate • Troubleshooting Expert • Network Manager</p>
+      </div>
+
+      <div class="header-controls">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Light/Dark Mode">🌙</button>
+      </div>
+    </div>
   </header>
 
-  <section id="hero">
-    <img src="profile.jpg" alt="Edward John Paulo" class="profile-img">
-    <h2>Hello, I'm Edward 👋</h2>
-    <p>I’m an IT graduate with 7 years of experience in logistics and a passion for technology, AI, and network management.</p>
-    <a href="EdwardPaulo-Resume.pdf" class="btn" download>📄 Download Résumé</a>
-  </section>
+  <!-- Hero -->
+  <main>
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <img src="profile.jpg" alt="Portrait of Edward John Paulo" class="profile-img" width="150" height="150" loading="lazy">
+      <h2 id="hero-heading">Hello, I'm Edward 👋</h2>
+      <p class="lead">I’m an IT graduate with 7 years of experience in logistics and a passion for technology, AI, and network management.</p>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I specialize in troubleshooting PCs, laptops, and smartphones. With strong skills in C++, C#, HTML, and CSS, I create efficient solutions. I’m also a Piso WiFi vendo builder and manage small to mid-size networks.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>💻 PC / Laptop / Smartphone Troubleshooting</li>
-      <li>🌐 Network Setup & Management</li>
-      <li>⚙️ C++, C#, HTML, CSS</li>
-      <li>🤖 Artificial Intelligence & Automation</li>
-      <li>📦 Logistics Systems & IT Support</li>
-      <li>📶 Piso WiFi Vendo Development</li>
-      <li>🔍 Quality Assurance Associate</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Piso WiFi System</h3>
-        <p>Custom-built vending WiFi network solution for public use.</p>
+      <div class="hero-ctas">
+        <a href="EdwardPaulo-Resume.pdf" class="btn" download aria-label="Download Edward John Paulo resume">📄 Download Résumé</a>
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
       </div>
-      <div class="project-card">
-        <h3>AI Chat Assistant</h3>
-        <p>Developed an AI-powered assistant using Python and APIs.</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>I specialize in troubleshooting PCs, laptops, and smartphones. With skills in C++, C#, HTML, and CSS, I build efficient solutions. I design Piso WiFi vending systems and manage small-to-mid-size networks.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical Skills</h2>
+      <ul class="skill-list" role="list">
+        <li>PC / Laptop / Smartphone Troubleshooting</li>
+        <li>Network Setup &amp; Management</li>
+        <li>C++, C#, HTML, CSS</li>
+        <li>Artificial Intelligence &amp; Automation</li>
+        <li>Logistics Systems &amp; IT Support</li>
+        <li>Piso WiFi Vendo Development</li>
+        <li>Quality Assurance</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card" aria-labelledby="p1">
+          <h3 id="p1">Piso WiFi System</h3>
+          <p>Custom-built vending WiFi network solution for public use — hardware + server integration, billing, and network isolation.</p>
+        </article>
+
+        <article class="project-card" aria-labelledby="p2">
+          <h3 id="p2">AI Chat Assistant</h3>
+          <p>AI-powered assistant built with Python and external APIs to automate support and responses for internal operations.</p>
+        </article>
+
+        <article class="project-card" aria-labelledby="p3">
+          <h3 id="p3">Logistics Monitoring Tool</h3>
+          <p>Streamlined internal operations with monitoring dashboards and automated reporting for logistics workflows.</p>
+        </article>
       </div>
-      <div class="project-card">
-        <h3>Logistics Monitoring Tool</h3>
-        <p>Streamlined internal operations at a logistics company.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+
+      <form id="contact-form" aria-label="Contact form">
+        <label class="visually-hidden" for="user_name">Your Name</label>
+        <input id="user_name" type="text" name="user_name" placeholder="Your Name" required />
+
+        <label class="visually-hidden" for="user_email">Your Email</label>
+        <input id="user_email" type="email" name="user_email" placeholder="Your Email" required />
+
+        <label class="visually-hidden" for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required rows="5"></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📧 <a href="mailto:edwardjohnpaulo@gmail.com">edwardjohnpaulo@gmail.com</a></p>
+        <p>📱 <a href="tel:+639664297330">+63 966 429 7330</a></p>
       </div>
-    </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" name="user_name" placeholder="Your Name" required />
-      <input type="email" name="user_email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+      <div class="social-icons" role="navigation" aria-label="Social links">
+        <a href="https://www.facebook.com/edwardjohnpaulo" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a>
+        <a href="https://www.linkedin.com/in/edward-john-paulo-6ab22713b" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
+        <a href="https://github.com/edwardjohnpaulo-beep" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+      </div>
+    </section>
+  </main>
 
-    <br>
-    <p>📧 edwardjohnpaulo@gmail.com</p>
-    <p>📱 +63 966 429 7330</p>
+  <!-- Scroll to top -->
+  <button id="scrollTop" aria-label="Scroll to top">⬆</button>
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com/edwardjohnpaulo" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.linkedin.com/in/edward-john-paulo-6ab22713b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/edwardjohnpaulo-beep" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    </div>
-  </section>
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>© <span id="year"></span> Edward John D. Paulo. All rights reserved.</p>
+  </footer>
 
-  <button id="scrollTop">⬆</button>
-
-  <footer><p>© 2025 Edward John D. Paulo. All rights reserved.</p></footer>
-
-  <script src="script.js"></script>
-
-  <!-- Theme Toggle -->
-  <script>
-    const themeToggle = document.getElementById("themeToggle");
-    const body = document.body;
-
-    // Load saved theme
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
-      body.classList.add("light");
-      themeToggle.textContent = "🌞";
-    } else {
-      themeToggle.textContent = "🌙";
-    }
-
-    themeToggle.addEventListener("click", () => {
-      const isLight = body.classList.toggle("light");
-      themeToggle.textContent = isLight ? "🌞" : "🌙";
-      localStorage.setItem("theme", isLight ? "light" : "dark");
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
 </body>
 </html>
